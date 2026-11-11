@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TN SALES & BUY</title>
+    <link rel="stylesheet" href="shop.css">
+</head>
+<body>
+
+    <header>
+        <img class="logo" src="images.jpg" alt="logo">
+        <h1>TN SALES & BUY </h1>
+        <p>Buy and Sell Used Products Easily</p>
+    </header>
+
+    <div class="container">
+
+        <h2>Sell Your Product</h2>
+
+        <input type="text" id="name" placeholder="Product Name">
+        <input type="number" id="price" placeholder="Price">
+        <input type="text" id="seller" placeholder="Seller Name">
+        <input type="text" id="phone" placeholder="Contact Number">
+
+        <label>Upload Product Image:</label>
+        <input type="file" id="image" accept="image/*">
+
+        <button onclick="addProduct()">Add Product</button>
+
+        <h2>Available Products</h2>
+
+        <input type="text" id="search"
+               placeholder="Search Product"
+               onkeyup="searchProduct()">
+
+        <div id="products"></div>
+
+        <div id="details"></div>
+
+    </div>
+
+    <script src="shop.js"></script>
+</body>
+</html>
